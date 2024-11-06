@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<Head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>인공지능의 History</title>
+<style>
+          .menu-item {
+            margin: 10px 0;
+        }
+        .menu-item button {
+            width: 80%;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #555;
+            color: white;
+        }
+        .menu-item button:hover {
+            background-color: #333;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 0.8s ease-in-out;
+      background: linear-gradient(to bottom, white, #555);
+  }
+  header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+  }
+  nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+  }
+  nav a {
+            color: white;
+            padding: 15px 60px;
+            text-decoration: none;
+            text-align: center;
+  }
+  nav a:hover {
+            background-color: #555;
+  }
+  div {
+            background-color: #555; /* 배경색 설정 */
+            padding: 15px; /* 내부 여백 */
+            border-radius: 20px;/* 둥근 모서리 */
+          
+            width: 1500px; /* 너비 설정 */
+            margin: 10px auto; /* 중앙 정렬 (수평) */
+        }  
+
+        .title-text {
+            font-size: 24px; /* 제목 크기 */
+            color: rgb(231, 97, 97); /* 제목 색상 */
+            font-weight: bold; /* 굵게 표시 */
+        }
+
+        .description-text {
+            font-size: 15px; /* 설명 텍스트 크기 */
+            color: white; /* 설명 텍스트 색상 */
+            margin-top: 10px; /* 위쪽 여백 */
+        }
+                /* 오른쪽 사이드 이미지 스타일 */
+          .sidebar-image {
+            width: 16%;
+            float: right;
+            padding: 20px;
+        }
+
+        /* 이미지 스타일 */
+        .sidebar-image img {
+            width: 100%;
+            border-radius: 10px; /* 둥근 모서리 */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+        }
+        table {
+            width: 80%; /* 테이블 너비 설정 */
+            margin: 20px auto; /* 가운데 정렬 */
+            border-collapse: collapse; /* 셀 간의 경계 제거 */
+            overflow: hidden;
+            border-radius: 10px; /* 테두리 둥글게 */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1); /* 테이블에 그림자 효과 */
+        }
+
+        th, td {
+            padding: 20px; /* 셀 내부 여백 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #444;
+            color: white;
+            padding: 15px; /* 홀수 행의 배경색 */
+        }
+
+        tr:nth-child(even) {
+            background-color: "#white"; /* 짝수 행의 배경색 */
+        }
+        
+</style>
+</Head>
+
+<body>
+  <header>
+    <h1>인공지능의 History</h1>
+</header>
+<nav>
+  <a href="Index.HTML">Menu</a>
+  <a href="IMG.HTML">DALL·E</a>
+  <a href="Audio.HTML">Haiper-AI</a>
+  <a href="Music.HTML">LoudMe</a>
+  <a href="ChatGPT.html">ChatGPT</a>
+  <a href="Future.HTML">Future</a>
+</nav>
+
+<audio id="background-music" autoplay loop muted>
+  <source src="코딩할 때 듣기 좋은 노래1.mp3" type="audio/mp3">
+  <source src="코딩할 때 듣기 좋은 노래1.ogg" type="audio/ogg">
+  브라우저가 오디오 요소를 지원하지 않습니다.
+</audio>
+
+<script>
+window.addEventListener('load', () => {
+    const music = document.getElementById('background-music');
+    music.play().then(() => {
+        console.log("음악이 재생되었습니다.");
+    }).catch(error => {
+        console.log("자동 재생이 차단되었거나 오류가 발생했습니다:", error);
+    });
+});
+</script>
+
+<div class="custom-div"> <div class="sidebar-image">
+  <img src="History3.webp" alt="인공지능 발달 과정 다이어그램">
+  <center>
+    <font size="1" color="white">(DALL·E가 그린 인공지능 그림)</font>
+</center>
+</div>
+  <span class="title-text">인공지능이란?</span><p>
+  <span class="description-text">인공지능(AI)은 사람의 지능처럼 생각하고 학습하며 문제를 해결할 수 있는 컴퓨터 프로그램이나 시스템을 말한다. 쉽게 말해, 인공지능은 사람처럼 생각하는 '똑똑한 기계'라고 할 수 있다.
+
+인공지능은 크게 두 가지로 나눌 수 있다: <br><br>
+
+<B>약한 인공지능(좁은 인공지능):</B> 특정한 작업만 잘 수행하는 인공지능이다. 예를 들어, 스마트폰의 음성 인식 기능이나 검색 엔진 등이 여기에 해당한다. 주어진 한 가지 일을 잘하지만, 다른 일을 할 수는 없다.<br>
+<br>
+<B>강한 인공지능(일반 인공지능):</B> 사람처럼 여러 분야에서 자유롭게 사고하고 문제를 해결할 수 있는 인공지능이다. 아직 개발되진 않았지만, SF 영화에 자주 등장하는 인공지능이 바로 이 유형이다.<br>
+<br>
+
+인공지능은 컴퓨터가 수많은 데이터를 분석하고, 그 안에서 패턴을 찾아내어 '학습'함으로써 발전해. 이 과정이 반복되면서 점점 더 똑똑해지고, 우리가 직접 알려주지 않아도 스스로 개선할 수 있는 능력을 갖추게 된다.
+
+요즘엔 인공지능이 여러 산업에서 널리 사용되고 있다. 예를 들어, 의료 분야에서는 질병을 진단하는 데 사용되고, 금융 분야에서는 투자의 위험을 분석하기도 한다.
+</span>
+  </div>
+
+<div class = "custom-div">
+  <div class="sidebar-image">
+    <img src="History2.webp" alt="인공지능 발달 과정 다이어그램">
+    <center>
+      <font size="1" color="white">(DALL·E가 그린 인공지능의 역사를 나타내는 그림)</font>
+  </center>
+  </div>
+  <span class="title-text">인공지능의 역사</span><p>
+  <span class="description-text">
+    <FONT SIZE = "4"><B>1. 초기 개념과 아이디어(1950년대 이전)</B></FONT><br>
+    인공지능이라는 개념 자체는 1950년대에 나오기 시작했지만, 그 이전에도 기계가 사람처럼 생각하고 학습할 수 있을지에 대한 연구와 철학적 고찰이 있었다.
+    <br>
+    <br>
+
+    <FONT SIZE = "4"><B>2. 인공지능의 탄생(1956년)</B></FONT><br>
+    1956년 다트머스 회의에서 존 매카시가 "인공지능"이라는 용어를 처음 사용하며 학문 분야로서의 인공지능이 탄생하게 된 것이다. 이 회의에서는 기계가 인간처럼 학습하고 문제를 해결할 수 있을 가능성에 대해 논의되었다.
+    <br>
+    <br>
+    <FONT SIZE = "4"><B>3. 초기 연구와 발전(1950~1970년대)</B></FONT><br>
+    1950~1970년대에는 인공지능 연구가 활발히 진행되며 간단한 논리와 규칙에 기반한 프로그램들이 개발되었다. 그러나 기술의 한계로 인해 당시 인공지능은 복잡한 문제를 해결하는 데 어려움이 있었다.
+    <br>
+    <br>
+    <FONT SIZE = "4"><B>4. 첫 번째 AI 겨울(1970~1980년대)</B></FONT><br>
+    1970년대 후반부터 1980년대 중반까지는 연구 자금이 줄어들고 인공지능에 대한 관심이 감소하면서 'AI 겨울'이라고 불리는 침체기가 찾아온 것이다. 기대에 미치지 못한 성과로 인해 많은 연구가 중단되었다.
+    <br>
+    <br>
+    <FONT SIZE = "4"><B>5. 기계 학습과 데이터 기반 발전(1990년대~2000년대)</B></FONT><br>
+    1990년대에 들어서면서 기계 학습과 통계적 방법론이 발전하며 인공지능이 다시 주목받기 시작한 것이다. 특히, 인터넷의 보급으로 인해 데이터의 양이 급격히 증가하면서 기계 학습을 활용한 인공지능 모델이 효과를 보기 시작했다.
+    <br>
+    <br>
+    <FONT SIZE = "4"><B>6. 딥러닝과 AI의 부활(2010년대 이후)</B></FONT><br>
+    2010년대에 들어 딥러닝 기술이 큰 발전을 이루며 인공지능은 비약적으로 성장하게 된 것이다. 딥러닝은 많은 데이터를 학습하여 고도의 예측 능력을 갖추게 해주며, 음성 인식, 이미지 인식, 자율 주행 등 여러 분야에서 성과를 내기 시작했다.
+    <br>
+    <br>
+    <FONT SIZE = "4"><B>7. 현대의 인공지능(2020년대~현재)</B></FONT><br>
+    오늘날 인공지능은 챗봇, 자율주행, 의료 진단 등 다양한 분야에서 실생활에 적용되고 있는 것이다. 특히 생성형 인공지능 기술의 발달로 텍스트 생성, 이미지 생성, 음악 생성 등 새로운 창작 방식에도 활용되고 있다.
+
+</div>
+
+<div class="custom-div">
+  <div class="sidebar-image">
+    <img src="History.webp" alt="인공지능 발달 과정 다이어그램">
+    <center>
+      <font size="1" color="white">(DALL·E가 그린 인공지능 발달과정에 대한 아키텍쳐 그림)</font>
+  </center>
+  </div>
+  <span class="title-text">다양한 방향에서의 인공지능의 발달 과정</span><p>
+  <span class="description-text">
+    <FONT SIZE = "4"><B>1. 이미지 생성과 분석 (2012년 이후)</B></FONT><br>
+    2012년, 딥러닝 기술이 급격히 발전하면서 이미지 인식 기술이 비약적으로 개선되기 시작했다. 특히 **알렉스넷(AlexNet)**이란 모델이 이미지 인식 대회에서 큰 성과를 내며, 이후 여러 딥러닝 모델들이 개발되었다.
+    2014년에는 **GAN(생성적 적대 신경망)**이 개발되면서 인공지능이 실제 같은 이미지를 생성하는 데 성공했다. GAN 기술을 통해 사람 얼굴, 풍경, 예술 작품 등을 생성하는 AI가 나오기 시작했다.
+    <br>
+    <br>
+    <FONT SIZE = "4"><B>2. 동영상 생성과 분석 (2016년 이후)</B></FONT><br>
+    동영상에서는 이미지와 시간적 흐름을 함께 분석해야 해서 난이도가 높지만, 2016년 이후부터 딥러닝 기반으로 동영상 속 사람의 동작을 분석하거나 특정 효과를 적용하는 AI 기술이 발전했다.
+  특히 Deepfake 기술이 등장하면서 AI가 기존 동영상을 기반으로 특정 인물의 얼굴을 다른 사람의 얼굴로 교체하거나 가짜 영상을 생성하는 기술이 큰 주목을 받았다. 이 시기를 기점으로 동영상 생성 기술이 빠르게 확장되었다.
+  <br>
+  <br>
+  <FONT SIZE = "4"><B>3. 음악 생성과 작곡 (2018년 이후)</B></FONT><br>
+  AI가 음악을 생성하기 시작한 것은 2018년 이후로, OpenAI의 MuseNet과 Google의 Magenta 프로젝트가 큰 영향을 미쳤다. MuseNet은 다양한 음악 장르와 악기를 조합해 새로운 곡을 만드는 AI였고, Magenta는 딥러닝을 통해 음악뿐 아니라 예술 작품까지 창작할 수 있도록 한 프로젝트였다.
+  이후 AI는 특정 음악 스타일을 모방해 작곡하거나, 실제 음악 작곡에 도움을 주는 도구로 발전했다.
+  <br>
+  <br>
+  <FONT SIZE = "4"><B>4. 멀티모달 AI와 생성형 AI (2020년대 이후)</B></FONT><br>
+  2020년대에는 이미지, 텍스트, 동영상, 음악을 모두 다룰 수 있는 멀티모달 AI가 개발되었다. GPT-3 이후에는 텍스트와 이미지를 결합한 DALL·E 모델이 나왔고, 이를 통해 AI가 텍스트 설명을 바탕으로 이미지를 생성하는 새로운 방식이 가능해졌다.
+ 또한 2022년에는 Stable Diffusion과 Midjourney 같은 AI 모델들이 공개되면서 누구나 쉽게 고품질의 이미지를 생성할 수 있는 시대가 열렸고, 동영상 생성도 연구가 활발히 진행 중이다.
+ <br>
+ <table>
+  <tr>
+    <td><font size ="5">이미지 생성</font></td><td><font size ="5">동영상 생성</font></td><td><font size ="5">음악 생성</font></td>
+  </tr>
+  <tr>
+    <td><img src="History4.webp" width="340"> <center>
+      <font size="1" color="white">(DALL·E가 그린 대전 한남대학교를 전통적으로 그린 그림)</font>
+  </center></td>
+  <td><video width="400" height="360" controls>
+    <source src="Hannam.mp4" type="video/mp4">
+  </video>
+  <center>
+    <font size="1" color="white">(Haiper-AI가 그린 한남대학교 영상)</font>
+</center></td>
+<TD>
+  <IMG src = "Music 1.png" width="340">
+  <audio controls>
+    <source src="코딩할 때 듣기 좋은 노래1.mp3" type="audio/mp3">
+  </audio>
+</TD>
+  </tr>
+ </table>
+</div>
+</html>

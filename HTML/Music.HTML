@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <TITLE>LoudMe</TITLE>
+
+  <STYLE>
+body {
+  animation: fadeIn 0.8s ease-in-out;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: hwb(184 84% 4%);
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+}
+
+nav a {
+  color: white;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+div {
+  background-color: #555;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  width: 1000px;
+  margin: 10px auto;
+}
+
+.title-text, .description-text {
+  color: white;
+}
+
+.title-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description-text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* 페이드 인 애니메이션 정의 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  </STYLE>
+
+  </head>
+
+  <body>
+    <header>
+    <H1>음악을 생성하는 생성형 AI <FONT color = "red">"LoudMe"</FONT></H1>
+    </header>
+
+    <nav>
+      <a href="Index.HTML">Menu</a>
+      <a href="IMG.HTML">DALL·E</a>
+      <a href="Audio.HTML">Haiper-AI</a>
+      <a href="ChatGPT.html">ChatGPT</a>
+      <a href="History.HTML">History</a>
+      <a href="Future.HTML">Future</a>
+    </nav>
+    <p>
+      <div class="custom-div">
+        <span class="title-text">LoudMe</span><p>
+        <span class="description-text">LoudMe는 사용자가 간단한 텍스트 설명을 입력하면 원하는 스타일과 테마에 맞는 음악을 자동으로 생성해주는 AI 음악 생성 플랫폼이다. </span>
+    </div>
+    <p>
+    <div class = "custom-div">
+      <span class = "title-text"> LoudMe에게 물어본 결과</span>
+    </div>
+    </p>
+    <TABLE>
+      <TR>
+        <TD><IMG src = "Music 2.png"></TD><TD><IMG src = "Music 1.png"></TD>
+      </TR>
+      <TR>
+        <TD>
+          <audio controls>
+            <source src="코딩할 때 듣기 좋은 노래.mp3" type="audio/mp3">
+          </audio>
+        </TD>
+        <TD>
+          <audio controls>
+            <source src="코딩할 때 듣기 좋은 노래1.mp3" type="audio/mp3">
+          </audio>
+        </TD>
+      </TR>
+    </TABLE>  
+  </body>
+  </html>

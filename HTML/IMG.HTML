@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <TITLE>DALL•E</TITLE>
+
+  <STYLE>
+      table {
+            width: 80%; /* 테이블 너비 설정 */
+            margin: 20px auto; /* 가운데 정렬 */
+            border-collapse: collapse; /* 셀 간의 경계 제거 */
+            overflow: hidden;
+            border-radius: 10px; /* 테두리 둥글게 */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1); /* 테이블에 그림자 효과 */
+        }
+
+        th, td {
+            padding: 15px; /* 셀 내부 여백 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+            border-bottom: 1px solid #ddd; /* 하단 경계선 */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #333;
+            color: white;
+            padding: 15px; /* 홀수 행의 배경색 */
+        }
+
+        tr:nth-child(even) {
+            background-color: hwb(184 84% 4%); /* 짝수 행의 배경색 */
+        }
+
+      header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px 60px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        div {
+            background-color: #555; /* 배경색 설정 */
+            padding: 15px; /* 내부 여백 */
+            border-radius: 20px;/* 둥근 모서리 */
+            text-align: center;
+            width: 1000px; /* 너비 설정 */
+            margin: 10px auto; /* 중앙 정렬 (수평) */
+        }   
+        .title-text {
+            font-size: 24px; /* 제목 크기 */
+            color: white; /* 제목 색상 */
+            font-weight: bold; /* 굵게 표시 */
+        }
+
+        .description-text {
+            font-size: 15px; /* 설명 텍스트 크기 */
+            color: white; /* 설명 텍스트 색상 */
+            margin-top: 10px; /* 위쪽 여백 */
+        }
+        .arrow {
+            text-align: center;
+            font-size: 50px; /* 화살표 크기 */
+            margin-top: 20px;
+            color: white; /* 화살표 색상 */
+        }
+      
+         /* 페이드 인 애니메이션 정의 */
+         @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        body {
+            animation: fadeIn 0.8s ease-in-out;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20%;
+            font-size: 24px;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #555;
+        }
+  </STYLE>
+
+  </head>
+
+  <body>
+    <header>
+    <H1>이미지를 생성하는 생성형 AI <FONT color = "red">"DALL•E"</FONT></H1>
+    </header>
+
+    <nav>
+      <a href="Index.HTML">Menu</a>
+      <a href="Audio.HTML">Haiper-AI</a>
+      <a href="Music.HTML">LoudMe</a>
+      <a href="ChatGPT.html">ChatGPT</a>
+      <a href="History.HTML">History</a>
+      <a href="Future.HTML">Future</a>
+    </nav>
+    <p>
+      <div class="custom-div">
+        <span class="title-text">DALL·E</span><p>
+        <span class="description-text">DALL·E는 오픈AI가 개발한 자연어 서술로부터 이미지를 생성하는 기계 학습 모델이다.</span>
+    </div>
+    <p>
+    <div class = "custom-div">
+      <span class = "title-text"> DALL·E에게 물어본 결과</span>
+    </div>
+    </p>    
+    <TABLE>
+      <TR><TD><FONT SIZE = "5">프로그래머</FONT></TD><TD><FONT SIZE = "5">코딩</FONT></TD><TD><FONT SIZE = "5">컴퓨터</FONT></TD></TR>
+      <TR><TD><IMG src = "DALL·E IMG 3.webp" width="300"></TD> <TD><IMG src = "DALL·E IMG 2.webp" width="300"></TD><TD><IMG src = "DALL·E IMG 1.webp" width="300"></TD>
+      </TR>
+    </TABLE>
+  </body>
+  </html>

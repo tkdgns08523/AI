@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인공지능</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 0.8s ease-in-out;
+            background: linear-gradient(to bottom, white, #888);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px 60px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .outer-box {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #cacaca;
+            text-align: center;
+        }
+        .contain {
+            margin: 15px auto;
+            color: white;
+            background-color: #666;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+        .menu-item button {
+            width: 80%;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #555;
+            color: white;
+        }
+        .menu-item button:hover {
+            background-color: #333;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>인공지능</h1>
+</header>
+
+<nav>
+    <a href="https://openai.com/chatgpt/overview/">DALL·E/ChatGPT</a>
+    <a href="https://haiper.ai/">Haiper-AI</a>
+    <a href="https://loudme.ai/">LoudMe</a>
+    <a href="https://aws.amazon.com/ko/what-is/artificial-intelligence/">인공지능</a>
+</nav>
+
+<div class="outer-box">
+    <div class="contain">
+        <font size="5">인공지능에 대해</font>
+    </div>
+    <div class="container">
+        <div class="menu-item">
+            <button onclick="location.href='History.html'">History</button>
+        </div>
+        <div class="menu-item">
+            <button onclick="location.href='Future.html'">Future</button>
+        </div>
+    </div>
+</div>
+
+<div class="outer-box">
+    <div class="contain">
+        <font size="5">사용한 인공지능</font>
+    </div>
+    <div class="container">
+        <div class="menu-item">
+            <button onclick="location.href='IMG.html'">DALL·E</button>
+        </div>
+        <div class="menu-item">
+            <button onclick="location.href='Audio.html'">Haiper-AI</button>
+        </div>
+        <div class="menu-item">
+            <button onclick="location.href='Music.html'">LoudMe</button>
+        </div>
+        <div class="menu-item">
+            <button onclick="location.href='ChatGPT.html'">ChatGPT</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
