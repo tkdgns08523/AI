@@ -1,0 +1,128 @@
+.menu-item {
+    margin: 10px 0;
+  }
+  .menu-item button {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+  }
+  .menu-item button:hover {
+    background-color: #333;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 0.8s ease-in-out;
+  background: linear-gradient(to bottom, white, #555);
+  }
+  /* 제목 오른쪽에 배경 음악 버튼을 배치 */
+  header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative; /* 버튼 위치를 설정할 수 있도록 relative로 변경 */
+  }
+  
+  .music-button {
+  position: absolute;
+  right: 20px; /* 오른쪽 여백 */
+  top: 50%; /* 수직 중앙에 위치 */
+  transform: translateY(-50%); /* 중앙 정렬 */
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  }
+  
+  .music-button:hover {
+  background-color: #333;
+  }
+  
+  /* 음악 플레이어 숨기기 */
+  .audio-player {
+  display: none;
+  }
+  nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  }
+  nav a {
+    color: white;
+    padding: 15px 60px;
+    text-decoration: none;
+    text-align: center;
+  }
+  nav a:hover {
+    background-color: #555;
+  }
+  div {
+    background-color: #555; /* 배경색 설정 */
+    padding: 15px; /* 내부 여백 */
+    border-radius: 20px;/* 둥근 모서리 */
+  
+    width: 1500px; /* 너비 설정 */
+    margin: 10px auto; /* 중앙 정렬 (수평) */
+  }  
+  
+  .title-text {
+    font-size: 24px; /* 제목 크기 */
+    color: rgb(231, 97, 97); /* 제목 색상 */
+    font-weight: bold; /* 굵게 표시 */
+  }
+  
+  .description-text {
+    font-size: 15px; /* 설명 텍스트 크기 */
+    color: white; /* 설명 텍스트 색상 */
+    margin-top: 10px; /* 위쪽 여백 */
+  }
+        /* 오른쪽 사이드 이미지 스타일 */
+  .sidebar-image {
+    width: 16%;
+    float: right;
+    padding: 20px;
+  }
+  
+  /* 이미지 스타일 */
+  .sidebar-image img {
+    width: 100%;
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+  }
+  table {
+    width: 80%; /* 테이블 너비 설정 */
+    margin: 20px auto; /* 가운데 정렬 */
+    border-collapse: collapse; /* 셀 간의 경계 제거 */
+    overflow: hidden;
+    border-radius: 10px; /* 테두리 둥글게 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1); /* 테이블에 그림자 효과 */
+  }
+  
+  th, td {
+    padding: 20px; /* 셀 내부 여백 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #444;
+    color: white;
+    padding: 15px; /* 홀수 행의 배경색 */
+  }
+  
+  tr:nth-child(even) {
+    background-color: "#white"; /* 짝수 행의 배경색 */
+  }

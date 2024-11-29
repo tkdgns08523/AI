@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<Head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "../CSS/Future.css">
+  
+<title>인공지능의 Future</title>
+
+</Head>
+
+<body>
+  <header>
+    <h1>인공지능의 <Font Color = "#e76161">"Future"</Font></h1>
+    <!-- 배경 음악 버튼 -->
+    <button class="music-button" onclick="toggleAudio()">배경 음악 정지</button>
+    <!-- 오디오 요소 -->
+    <audio id="background-music" class="audio-player" loop autoplay>
+      <source src="../Music/인공지능1.mp3" type="audio/mp3">
+    </audio>
+</header>
+<nav>
+  <a href="Index.HTML">Menu</a>
+  <a href="IMG.HTML">DALL·E</a>
+  <a href="Video.HTML">Haiper-AI</a>
+  <a href="Music.HTML">LoudMe</a>
+  <a href="ChatGPT.html">ChatGPT</a>
+  <a href="History.HTML">History</a>
+</nav>
+
+<script>
+  function toggleAudio() {
+    var audio = document.getElementById('background-music');
+    var button = document.querySelector('.music-button');
+
+    // 음악이 재생 중이면 멈추고, 멈춰있으면 재생
+    if (audio.paused) {
+      audio.play();
+      button.textContent = '배경 음악 정지';
+    } else {
+      audio.pause();
+      button.textContent = '배경 음악 재생';
+    }
+  }
+  window.onload = function() {
+      document.getElementById('background-music').volume = 0.1;  // 페이지 로드 시 초기 볼륨을 매우 작게 설정
+    }
+</script>
+
+<div class="custom-div">
+  <div class="sidebar-video">
+    <video controls>
+      <source src="../Video/인공지능의 문제.mp4" type="video/mp4">
+    </video>
+    <center>
+      <font size="1" color="white">(Haiper-AI가 그린 인공지능의 문제점)</font>
+  </center>
+  </div>
+  <span class="title-text">현재까지 인공지능의 문제점</span><p>
+    <span class="description-text">
+      <Font Size ="4"><B>1. 데이터 편향(Bias)</B></Font><br>
+      AI는 학습 데이터에 크게 의존하기 때문에 데이터가 편향되어 있으면 결과도 편향될 수 있다. 예를 들어, 인종, 성별, 나이 등에 따른 차별적 결과를 초래할 수 있으며, 이는 사회적 불공정을 유발할 수 있다. 편향된 데이터를 기반으로 학습한 AI는 잘못된 결정을 내리거나 특정 집단에게 불리한 영향을 미칠 수 있다.<br><br>
+
+      <Font Size ="4"><B>2. 설명 가능성 부족(Black Box 문제)</B></Font><br>
+      많은 AI 모델, 특히 딥러닝 모델은 매우 복잡하여 그 작동 원리를 쉽게 설명하기 어렵다. AI가 왜 특정 결정을 내렸는지 이해하는 것이 어려워서, 중요한 결정(예: 의료 진단, 법적 판단)에 AI를 사용하는 것이 위험할 수 있다. 이로 인해 AI의 결과를 신뢰하거나 검증하는 것이 어려워지고, 책임 문제도 생길 수 있다. 데이터 수집 및 사용 과정에서 개인의 프라이버시가 침해될 가능성이 있기 때문에, 이를 안전하게 관리하는 것이 큰 과제이다.<br><br>
+
+      <Font Size ="4"><B>3. 데이터 의존성 및 프라이버시 문제</B></Font><br>
+      AI는 대량의 데이터에 의존해 학습하기 때문에 개인정보 보호 문제가 발생할 수 있다. 예를 들어, 의료 기록이나 금융 정보와 같은 민감한 데이터를 사용해야 하는 경우, 데이터 유출이나 악용의 위험이 존재한다.<br><br>
+
+      <Font Size ="4"><B>4. 보안 문제</B></Font><br>
+      AI 시스템이 해킹되거나 악용될 경우 심각한 보안 위협을 초래할 수 있다. 예를 들어, 자율 주행 자동차나 의료 AI 시스템이 공격을 받으면 위험한 상황이 발생할 수 있다. 또한, AI를 악의적으로 사용하는 경우(예: 딥페이크, 사이버 공격) 사회적 혼란을 야기할 가능성도 있다.<br><br>
+
+      </span>
+      <span class="title-text" style="display: block; text-align: center;">"차차 발전해 나아가면서 이러한 문제점을 보완해야함!"</span>
+    </div>    
+
+<div class="custom-div">
+  <div class="sidebar-image">
+    <img src="../IMG/Future.webp" alt="인공지능의 발전">
+    <center>
+      <font size="1" color="white">(DALL·E가 그린 인공지능의 발전)</font>
+  </center>
+  </div>
+<span class="title-text">앞으로 인공지능은 이렇게 발전!!!</span><p>
+  <span class="description-text">
+    <Font Size ="4"><B>1. 더 높은 수준의 이해와 창의성</B></Font><br>
+    인공지능은 현재 텍스트, 이미지, 음성 등 다양한 데이터를 이해하고 생성할 수 있지만, 앞으로는 인간의 감정을 더 잘 이해하고 상황에 맞는 창의적인 응답을 제공하는 데 더욱 발전할 것이다. 예를 들어, 예술작품을 창작하거나 복잡한 의사 결정을 내리는 데 더 큰 역할을 할 수 있다.<br><br>
+    <Font Size ="4"><B>2. 자율 학습과 적응 능력</B></Font><br>
+    인공지능은 현재 주어진 데이터와 알고리즘에 따라 학습하지만, 앞으로는 자율적으로 학습할 수 있는 능력이 강화될 것이다. 이를 통해 새로운 상황에 더 빠르게 적응하고, 복잡한 문제를 스스로 해결할 수 있는 인공지능이 발전할 것이다.<br><br>
+    <Font Size ="4"><B>3. 협력형 인공지능</B></Font><br>
+    인간과의 상호작용이 더욱 자연스럽고 효과적으로 발전할 것이다. 인공지능은 인간의 의도를 더 잘 이해하고, 협력하여 문제를 해결하는 능력이 강화될 것이다. 예를 들어, 직장에서의 팀워크나 개인 비서로서의 역할에서 더 높은 수준의 지원을 제공할 수 있다.<br><br>
+    <Font Size ="4"><B>4. 설명 가능성과 투명성</B></Font><br>
+    인공지능의 결정 과정이 더 투명하게 설명될 수 있도록 발전할 것이다. 현재의 인공지능은 종종 "블랙박스" 문제를 가지고 있는데, 앞으로는 인공지능이 왜 특정 결정을 내렸는지 이해하고 설명할 수 있는 기능이 추가될 것이다. 이는 특히 의료, 법률 등 중요한 분야에서 매우 유용할 것이다.<br><br>
+    <Font Size ="4"><B>5. 윤리적 인공지능</B></Font><br>
+    인공지능의 발전과 함께 윤리적 문제를 해결하기 위한 연구도 강화될 것이다. 사회적 책임을 다하고, 공정성과 차별 없는 결과를 보장하기 위해 다양한 윤리적 기준이 적용될 것이다.<br><br>
+    <Font Size ="4"><B>6. 산업별 특화 인공지능</B></Font><br>
+    의료, 교육, 금융, 제조업 등 특정 산업에 특화된 인공지능 솔루션이 계속 발전할 것이다. 예를 들어, 의료 분야에서는 더 정확한 진단과 개인 맞춤형 치료를 지원하고, 교육 분야에서는 학생들의 학습 스타일에 맞춘 맞춤형 교육을 제공하는 AI 시스템이 발전할 것이다.
+
+  </span>
+  </div>
+
+  <div class="custom-div">
+    <div class="sidebar-video">
+      <video controls>
+        <source src="../Video/인공지능의 미래 모습.mp4" type="video/mp4">
+      </video>
+      <center>
+        <font size="1" color="white">(Haiper-AI가 그린 인공지능의 미래 모습)</font>
+    </center>
+    </div>
+    <span class="title-text">앞으로 인공지능의 또다른 모습!!!</span><p>
+      <span class="description-text">
+      <Font Size ="4"><B>1. 멀티모달 인공지능</B></Font><br>
+      텍스트, 이미지, 음성 등 여러 형태의 데이터를 동시에 이해하고 연결할 수 있는 인공지능이 발전할 것이다. 예를 들어, 인공지능이 사진을 보고 그 장면을 설명하거나, 텍스트를 기반으로 장면을 시각화하는 기능이 더 정교해질 것이다. 또한, 사람의 감정 상태를 인식해 그에 맞게 상호작용하는 시스템도 개발될 것이다.<br><br>
+      <Font Size ="4"><B>2. 촉각 및 감각 인공지능</B></Font><br>
+      인공지능이 사람처럼 촉감을 느끼고 인식할 수 있는 능력이 발전할 것이다. 이를 통해 로봇이나 기계가 다양한 촉각 정보를 기반으로 작업을 수행할 수 있게 된다. 예를 들어, 로봇이 섬세한 작업(예: 외과 수술이나 손으로 작은 물체를 조작하는 일)을 할 수 있게 발전할 가능성이 있다.<br><br>
+      <Font Size ="4"><B>3. 3D 공간 인지 및 증강 현실(AI+AR)</B></Font><br>
+      인공지능은 앞으로 3D 공간을 더 잘 이해하고 활용하는 방향으로 발전할 것이다. 예를 들어, 증강 현실(AR)과 결합된 인공지능은 주변 환경을 인식하고 실시간으로 사용자에게 유용한 정보를 제공할 수 있다. 이러한 AI는 교육, 게임, 의료 등 다양한 분야에서 실시간 상호작용을 가능하게 할 것이다.<br><br>
+      <Font Size ="4"><B>4. 생물학적 및 화학적 AI</B></Font><br>
+      생물학과 화학의 복잡한 데이터를 분석하고 예측할 수 있는 AI가 발전할 것이다. 이러한 인공지능은 신약 개발, 유전자 편집, 환경 문제 해결에 기여할 수 있다. 예를 들어, 인공지능이 분자 구조를 분석하고 새로운 약물이나 친환경 소재를 설계하는 데 도움을 줄 수 있다.<br><br>
+      <Font Size ="4"><B>5. 정서 및 공감 AI</B></Font><br>
+      감정을 읽고 공감할 수 있는 인공지능이 발전할 것이다. 이러한 AI는 사용자와 더 깊이 소통하며 감정적 지지를 제공할 수 있다. 예를 들어, 심리 치료에 사용되는 인공지능 상담사나 사람의 감정을 감지해 적절한 음악이나 환경을 조성하는 스마트 시스템이 등장할 수 있다.<br><br>
+      <Font Size ="4"><B>6. 뇌-컴퓨터 인터페이스(BMI) AI</B></Font><br>
+      뇌 신호를 읽고 이해하는 인공지능이 발전하면서, 뇌와 기계가 직접 소통하는 기술이 현실화될 것이다. 이를 통해 장애를 가진 사람들이 생각만으로 기계를 조작하거나, 심지어 의사소통이 어려운 사람들과 소통할 수 있는 시스템이 개발될 수 있다. 이 기술은 의료뿐만 아니라 인간의 인지 능력을 보조하는 데에도 쓰일 수 있다.<br><br>
+    </span>
+  </div>

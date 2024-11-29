@@ -3,149 +3,54 @@
 <Head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "../CSS/History.css">
+  
 <title>인공지능의 History</title>
-<style>
-          .menu-item {
-            margin: 10px 0;
-        }
-        .menu-item button {
-            width: 80%;
-            padding: 15px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #555;
-            color: white;
-        }
-        .menu-item button:hover {
-            background-color: #333;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-  body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      animation: fadeIn 0.8s ease-in-out;
-      background: linear-gradient(to bottom, white, #555);
-  }
-  header {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-  }
-  nav {
-      display: flex;
-      justify-content: center;
-      background-color: #444;
-  }
-  nav a {
-            color: white;
-            padding: 15px 60px;
-            text-decoration: none;
-            text-align: center;
-  }
-  nav a:hover {
-            background-color: #555;
-  }
-  div {
-            background-color: #555; /* 배경색 설정 */
-            padding: 15px; /* 내부 여백 */
-            border-radius: 20px;/* 둥근 모서리 */
-          
-            width: 1500px; /* 너비 설정 */
-            margin: 10px auto; /* 중앙 정렬 (수평) */
-        }  
 
-        .title-text {
-            font-size: 24px; /* 제목 크기 */
-            color: rgb(231, 97, 97); /* 제목 색상 */
-            font-weight: bold; /* 굵게 표시 */
-        }
-
-        .description-text {
-            font-size: 15px; /* 설명 텍스트 크기 */
-            color: white; /* 설명 텍스트 색상 */
-            margin-top: 10px; /* 위쪽 여백 */
-        }
-                /* 오른쪽 사이드 이미지 스타일 */
-          .sidebar-image {
-            width: 16%;
-            float: right;
-            padding: 20px;
-        }
-
-        /* 이미지 스타일 */
-        .sidebar-image img {
-            width: 100%;
-            border-radius: 10px; /* 둥근 모서리 */
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
-        }
-        table {
-            width: 80%; /* 테이블 너비 설정 */
-            margin: 20px auto; /* 가운데 정렬 */
-            border-collapse: collapse; /* 셀 간의 경계 제거 */
-            overflow: hidden;
-            border-radius: 10px; /* 테두리 둥글게 */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 1); /* 테이블에 그림자 효과 */
-        }
-
-        th, td {
-            padding: 20px; /* 셀 내부 여백 */
-            text-align: center; /* 텍스트 가운데 정렬 */
-        }
-
-        tr:nth-child(odd) {
-            background-color: #444;
-            color: white;
-            padding: 15px; /* 홀수 행의 배경색 */
-        }
-
-        tr:nth-child(even) {
-            background-color: "#white"; /* 짝수 행의 배경색 */
-        }
-        
-</style>
 </Head>
 
 <body>
   <header>
-    <h1>인공지능의 History</h1>
+    <h1>인공지능의 <Font Color = "#e76161">"History"</Font></h1>
+    <!-- 배경 음악 버튼 -->
+    <button class="music-button" onclick="toggleAudio()">배경 음악 정지</button>
+    <!-- 오디오 요소 -->
+    <audio id="background-music" class="audio-player" loop autoplay>
+      <source src="../Music/인공지능.mp3" type="audio/mp3">
+    </audio>
 </header>
 <nav>
   <a href="Index.HTML">Menu</a>
   <a href="IMG.HTML">DALL·E</a>
-  <a href="Audio.HTML">Haiper-AI</a>
+  <a href="Video.HTML">Haiper-AI</a>
   <a href="Music.HTML">LoudMe</a>
   <a href="ChatGPT.html">ChatGPT</a>
   <a href="Future.HTML">Future</a>
 </nav>
 
-<audio id="background-music" autoplay loop muted>
-  <source src="코딩할 때 듣기 좋은 노래1.mp3" type="audio/mp3">
-  <source src="코딩할 때 듣기 좋은 노래1.ogg" type="audio/ogg">
-  브라우저가 오디오 요소를 지원하지 않습니다.
-</audio>
-
 <script>
-window.addEventListener('load', () => {
-    const music = document.getElementById('background-music');
-    music.play().then(() => {
-        console.log("음악이 재생되었습니다.");
-    }).catch(error => {
-        console.log("자동 재생이 차단되었거나 오류가 발생했습니다:", error);
-    });
-});
+  function toggleAudio() {
+    var audio = document.getElementById('background-music');
+    var button = document.querySelector('.music-button');
+
+    // 음악이 재생 중이면 멈추고, 멈춰있으면 재생
+    if (audio.paused) {
+      audio.play();
+      button.textContent = '배경 음악 정지';
+    } else {
+      audio.pause();
+      button.textContent = '배경 음악 재생';
+    }
+  }
+  window.onload = function() {
+      document.getElementById('background-music').volume = 0.1;  // 페이지 로드 시 초기 볼륨을 매우 작게 설정
+    }
 </script>
 
 <div class="custom-div"> <div class="sidebar-image">
-  <img src="History3.webp" alt="인공지능 발달 과정 다이어그램">
+  <img src="../IMG/History3.webp" alt="인공지능 발달 과정 다이어그램">
   <center>
-    <font size="1" color="white">(DALL·E가 그린 인공지능 그림)</font>
+    <font size="1" color="white">(DALL·E가 그린 인공지능)</font>
 </center>
 </div>
   <span class="title-text">인공지능이란?</span><p>
@@ -166,9 +71,9 @@ window.addEventListener('load', () => {
 
 <div class = "custom-div">
   <div class="sidebar-image">
-    <img src="History2.webp" alt="인공지능 발달 과정 다이어그램">
+    <img src="../IMG/History2.webp" alt="인공지능의 역사">
     <center>
-      <font size="1" color="white">(DALL·E가 그린 인공지능의 역사를 나타내는 그림)</font>
+      <font size="1" color="white">(DALL·E가 그린 인공지능의 역사)</font>
   </center>
   </div>
   <span class="title-text">인공지능의 역사</span><p>
@@ -205,9 +110,9 @@ window.addEventListener('load', () => {
 
 <div class="custom-div">
   <div class="sidebar-image">
-    <img src="History.webp" alt="인공지능 발달 과정 다이어그램">
+    <img src="../IMG/History.webp" alt="인공지능 발달 과정에 대한 아키텍쳐">
     <center>
-      <font size="1" color="white">(DALL·E가 그린 인공지능 발달과정에 대한 아키텍쳐 그림)</font>
+      <font size="1" color="white">(DALL·E가 그린 인공지능 발달과정에 대한 아키텍쳐)</font>
   </center>
   </div>
   <span class="title-text">다양한 방향에서의 인공지능의 발달 과정</span><p>
@@ -236,19 +141,19 @@ window.addEventListener('load', () => {
     <td><font size ="5">이미지 생성</font></td><td><font size ="5">동영상 생성</font></td><td><font size ="5">음악 생성</font></td>
   </tr>
   <tr>
-    <td><img src="History4.webp" width="340"> <center>
+    <td><img src="../IMG/History4.webp" width="340"> <center>
       <font size="1" color="white">(DALL·E가 그린 대전 한남대학교를 전통적으로 그린 그림)</font>
   </center></td>
   <td><video width="400" height="360" controls>
-    <source src="Hannam.mp4" type="video/mp4">
+    <source src="../Video/Hannam.mp4" type="video/mp4">
   </video>
   <center>
     <font size="1" color="white">(Haiper-AI가 그린 한남대학교 영상)</font>
 </center></td>
 <TD>
-  <IMG src = "Music 1.png" width="340">
+  <IMG src = "../IMG/Music 1.png" width="340">
   <audio controls>
-    <source src="코딩할 때 듣기 좋은 노래1.mp3" type="audio/mp3">
+    <source src="../Music/코딩할 때 듣기 좋은 노래1.mp3" type="audio/mp3">
   </audio>
 </TD>
   </tr>
