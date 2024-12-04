@@ -1,7 +1,3 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
 body {
     animation: fadeIn 0.8s ease-in-out;
     margin: 0;
